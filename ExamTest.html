@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            background-color: white;
+        }
+        .container{
+            position: absolute;
+            background-color: antiquewhite;
+            width: 100%;
+            height: 100vh;
+            border: 1px solid black;
+        }
+        .navigation{
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background-color: purple;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .navigation ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        .navigation li{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .navigation a{
+            text-decoration: none;
+            color: white;
+        }
+        .navigation button{
+            background-color: rgba(0,0,0,0.1);
+            color: white;
+            height: 30px;
+            width: 80px;
+            margin-right: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .navigation input{
+            height: 20px;
+            border-radius: 5px;
+            width: 200px;
+            transition: 2s;
+        }
+        .navigation input:hover{
+            height: 30px;
+        }
+        .container-logo{
+            position: relative;
+            width: 100%;
+            background-color: antiquewhite;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container-logo img{
+            width: 100px;
+        }
+        .content{
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-color: antiquewhite;
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .side-bar{
+            position: relative;
+            top: 10px;
+            width: 300px;
+            height: 280px;
+            background-color: antiquewhite;
+            margin-left: 10px;
+        }
+        .side-bar img{
+            width: 300px;
+            height: 250px;
+        }
+        .side-bar-content{
+            background-color: purple;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero{
+            display: flex;
+            flex-direction: row;
+        }
+        .choice{
+            position: relative;
+            top: 10px;
+            width: 215px;
+            height: 230px;
+            background-color: white;
+            color: black;
+            margin-left: 12px;
+        }
+        .choice img{
+            width: 100%;
+            height: 160px;
+        }
+        .hero-2{
+            position: absolute;
+            top: 255px;
+            left: 310px;
+            color: red;
+            width: 680px;
+            height: 230px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: row;
+        }
+        .choice-2{
+            position: relative;
+            top: 0;
+            width: 220px;
+            height: 230px;
+            background-color:white;
+            color: black;
+            margin-left: 12px;
+        }
+        .describe{
+            position: absolute;
+            top: 310px;
+            left: 10px;
+            color: red;
+            width: 300px;
+            height: 175px;
+            background-color: white;
+        }
+        .footer{
+            position: relative;
+            background-color: black;
+            color: white;
+            width: 98%;
+            height: 30px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div>
+                    <input type="text" placeholder="Name">
+                    <button >Tim kiem</button>
+                </div>
+            </div>
+            <div class="container-logo">
+                <img src="images/logo-perfume.jpg" alt="Logo">
+            </div>
+            <div class="content">
+                <div class="side-bar">
+                    <img src="images/banner.jpg" alt="Banner">
+                    <div class="side-bar-content">
+                        <p>Something whatever you want</p>
+                    </div>
+                </div>
+                <div class="hero">
+                    <div class="choice">
+                        <img src="images/perfume-1.png" alt="Perfume 1">
+                    </div>
+                    <div class="choice">
+                        <p>hello</p>
+                    </div>
+                    <div class="choice">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="hero-2">
+                    <div class="choice-2">
+                        <p>hello</p>
+                    </div>
+                    <div class="choice-2">
+                        <p>hello</p>
+                    </div>
+                    <div class="choice-2">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="describe">
+                    <p>Hello</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Write whatever you want</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
